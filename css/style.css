@@ -1,0 +1,318 @@
+/* poppins-regular - latin */
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""), url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	src: local(""), url("../fonts/poppins-v15-latin-500.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/poppins-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 900;
+	src: local(""), url("../fonts/poppins-v15-latin-900.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/poppins-v15-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+button {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Poppins";
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #ffffff;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.wrapper {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+/*Header styles START */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.header__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-right: 100px;
+}
+
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header__item {
+	margin-right: 56px;
+}
+
+.header__item:last-child {
+	margin-right: 0;
+}
+
+.header__link {
+	font-weight: 600;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+	opacity: 75%;
+}
+/*Header styles END */
+
+/*Intro styles START */
+
+.intro {
+	min-height: 100vh;
+	background: url(../img/Intro.jpg) no-repeat center;
+	z-index: 1;
+	background-size: cover;
+	padding-top: 412px;
+}
+.intro__wrapper {
+	max-width: 1110px;
+	margin: 0 auto;
+	position: relative;
+}
+.intro__title {
+	max-width: 280px;
+	font-size: 48px;
+	line-height: 72px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 10px;
+}
+.intro__subtitle {
+	color: white;
+	max-width: 700px;
+	font-weight: bold;
+	font-size: 100px;
+	line-height: 150px;
+	margin-bottom: 52px;
+}
+
+/*.music__play {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}*/
+
+.intro__player {
+	filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+	width: 887px;
+	height: 10px;
+	margin-bottom: 143px;
+}
+
+.intro__cards {
+	max-width: 1110px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
+}
+.intro__card {
+	max-width: 350px;
+	max-height: 300px;
+	grid-column: span 1;
+}
+
+/* INTRO styles END */
+/* BIO styles START */
+.bio {
+	background: #1c1b21;
+	padding-top: 179px;
+}
+.bio__block-line {
+	display: flex;
+}
+.section-title {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 72px;
+}
+.bio__title {
+	margin-bottom: 60px;
+}
+.bio_paragraph {
+	float: left;
+}
+.bio__text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+.bio__cards {
+	max-width: 350px;
+	max-height: 400px;
+	margin-left: 100px;
+	display: flex;
+	flex-basis: 400px;
+	flex-shrink: 0;
+}
+.bio__card1 {
+	width: 350px;
+	height: 400px;
+	position: relative;
+	z-index: 10;
+	top: -25px;
+	right: -250px;
+}
+.bio__list {
+	list-style-position: inside;
+	column-count: 2;
+	list-style-type: decimal;
+	height: 200px;
+}
+.bio__list-ul {
+	list-style-image: url("/education__DJSITE/img/svg/marker__li.svg");
+}
+.bio__list-ul {
+	padding-left: 20px;
+}
+/* BIO styles END */
+section {
+	background: #1c1b21;
+}
+/* POPULOVE styles START */
+.populove__block {
+	max-width: 1110px;
+	padding-top: 238px;
+	border: 3px solid;
+	border-radius: 30px 0 30px 0;
+}
+.populove__paragraph {
+	display: flex;
+}
+.populove__p {
+	max-width: 520px;
+}
+
+.populove__card {
+	max-width: 370px;
+	max-height: 483px;
+	position: relative;
+	left: -100px;
+	top: -px;
+}
+
+.populove__line {
+	padding-top: 25px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #ffffff;
+	opacity: 0.6;
+}
+/* POPULOVE styles END */
+
+/* TRACKSstyles START */
+.tracks {
+	padding-top: 180px;
+}
+.tracks__items {
+	display: flex;
+}
+.tracks__picture {
+	max-width: 510px;
+}
+.tracks__lasttracks {
+	padding-left: 190px;
+}
+.tracks__title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 72px;
+}
+.tracks__song {
+	list-style-type: decimal-leading-zero;
+	margin-bottom: 20px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 27px;
+}
+.tracks__music {
+	margin-bottom: 50px;
+}
+.tracks__follow {
+	display: flex;
+}
+.tracks__follow p {
+	font-size: 20px;
+}
+.tracks__players {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-left: 50px;
+}
+.tracks__players li {
+	margin-left: 50px;
+}
+
+.tracks__item1 {
+	list-style-image: url("/education__DJSITE/img/svg/tracks__item1.svg");
+}
+.tracks__item2 {
+	list-style-image: url("/education__DJSITE/img/svg/tracks__item2.svg");
+}
+/* TRACKSstyles END */
+
+/* GALLERY START */
+.gallery {
+	padding-top: 180px;
+}
+.gallery__conteiner {
+	display: inline-block;
+}
+.gallery__linesblock {
+	display: inline-block;
+}
