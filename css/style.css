@@ -241,8 +241,6 @@ section {
 	top: -px;
 }
 
-.populove__a {
-}
 .populove__line {
 	padding-top: 25px;
 	margin-bottom: 25px;
@@ -250,6 +248,8 @@ section {
 	opacity: 0.6;
 }
 /* POPULOVE styles END */
+
+/* TRACKSstyles START */
 .tracks {
 	padding-top: 180px;
 }
@@ -303,4 +303,16 @@ section {
 }
 .tracks__item2 {
 	list-style-image: url("/education__DJSITE/img/svg/tracks__item2.svg");
+}
+/* TRACKSstyles END */
+
+/* GALLERY START */
+.gallery {
+	padding-top: 180px;
+}
+.gallery__conteiner {
+	display: inline-block;
+}
+.gallery__linesblock {
+	display: inline-block;
 }
